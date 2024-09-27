@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require fontawesome-all.min
+ *= require main.css
+ *= require noscript.css
  */

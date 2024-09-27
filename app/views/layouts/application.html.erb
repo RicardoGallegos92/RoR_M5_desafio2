@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title><%= content_for(:title) || "Desafio2" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
@@ -18,11 +19,6 @@
     <%= stylesheet_link_tag "noscript", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "fontawesome-all.min", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <%= javascript_include_tag "/js/application.js" %>
-    <%= javascript_include_tag "/js/breakpoints.min.js" %>
-    <%= javascript_include_tag "/js/browser.min.js" %>
-    <%= javascript_include_tag "/js/jquery.min.js" %>
-    <%= javascript_include_tag "/js/main.js" %>
   </head>
 
   <body>
