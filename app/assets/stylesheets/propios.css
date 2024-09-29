@@ -1,0 +1,84 @@
+html, body{
+	overflow: visible;
+}
+
+body{
+	min-height: 100vh;
+	width: auto;
+	padding:2vh 2vw;
+}
+
+body *{
+	text-align: center;
+}
+
+h1{
+	font-size: 2rem;
+}
+
+#ficha{
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	>img{
+		height: 232px;
+		width: auto;
+		box-shadow: 5px 5px 15px black;
+	}
+}
+
+#ficha-texto{
+	display: grid;
+	grid-template-areas:
+	'lnombre nombre'
+	'lnacionalidad nacionalidad'
+	'lnacimiento nacimiento'
+	'lmuerte muerte'
+	'lestilo estilo'
+	;
+}
+
+.lnombre,
+.lnacionalidad,
+.lnacimiento,
+.lmuerte,
+.lestilo{
+	text-align: left;
+}
+
+.lnombre{
+	grid-area: lnombre;
+}
+.lnacionalidad{
+	grid-area: lnacionalidad;
+}
+.lnacimiento{
+	grid-area: lnacimiento;
+}
+.lmuerte{
+	grid-area: lmuerte;
+}
+.lestilo{
+	grid-area: lestilo;
+}
+
+.nombre{
+	grid-area: nombre;
+}
+
+.nacionalidad{
+	grid-area: nacionalidad;
+}
+
+.nacimiento{
+	grid-area: nacimiento;
+}
+
+.muerte{
+	grid-area: muerte;
+}
+
+.estilo{
+	grid-area: estilo;
+}

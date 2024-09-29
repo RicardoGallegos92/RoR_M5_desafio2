@@ -3,6 +3,10 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<head>
+	<!-- esto interrumpe el funcionamiento del infos/about -->
+	<%= stylesheet_link_tag "noscript", "data-turbo-track": "reload" %>
+</head>
 <body class="is-preload-0 is-preload-1 is-preload-2">
 
   <!-- Main -->
@@ -11,12 +15,10 @@
       <!-- Header -->
         <header id="header">
           <h1>Galeria Lens</h1>
-          <p>Una galería dedicada al arte de Gustav Klimt <a href="http://html5up.net" target="_blank">HTML5 UP</a></p>
+          <p>Una galería dedicada al arte de <a href="/infos/about">Gustav Klimt</a></p>
           <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="https://github.com/RicardoGallegos92" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/ricardo-gallegos-arenas/" class="icon brands fa fa-linkedin" target="_blank"><span class="label">Email</span></a></li>
           </ul>
         </header>
 
@@ -130,9 +132,5 @@
         </footer>
 
     </div>
+<script src="<%= asset_path('main.js') %>" defer></script>
 </body>
-<!-- Scripts -->
-<script src="<%= asset_path('jquery.min.js') %>"></script>
-<script src="<%= asset_path('browser.min.js') %>"></script>
-<script src="<%= asset_path('breakpoints.min.js') %>"></script>
-<script src="<%= asset_path('main.js') %>"></script>

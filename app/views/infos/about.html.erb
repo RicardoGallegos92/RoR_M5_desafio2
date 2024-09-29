@@ -1,0 +1,36 @@
+<head>
+	<%= stylesheet_link_tag "propios", "data-turbo-track": "reload" %>
+</head>
+<body>
+	<h1><a href="/index">Galería Klimt</a></h1>
+	<hr>
+	<p>Es esta muestra de 12 piezas, Damos a conocer algunas piezas del artista Gustav Klimt (1862 - 1918)</p>
+	<br>
+	<h2><a href="https://es.wikipedia.org/wiki/Gustav_Klimt" target="_blank">GUSTAV KLIMT</a></h2>
+	<% artista = {
+		"nombre" => "Gustav Klimt",
+		"nacionalidad" => "Austria",
+		"nacimiento" => "1862, Baumgarten, Austria",
+		"muerte" => "1918, Viena",
+		"estilo" => "Modernismo, Art Nouveau, Mosaico ecléctico",
+		"imagen" => "Klimt.jpg"
+	} %>
+	<hr>
+	<div id="ficha">
+		<img src="<%= asset_path("fulls/#{artista["imagen"]}") %>" alt="">
+		<div id="ficha-texto">
+			<p class="lnombre">Nombre</p><p class="nombre"><%= artista["nombre"] %></p>
+			<p class="lnacionalidad">Nacionalidad</p><p class="nacionalidad"><%= artista["nacionalidad"] %></p>
+			<p class="lnacimiento">Nacimiento</p><p class="nacimiento"><%=artista["nacimiento"] %></p>
+			<p class="lmuerte">Muerte</p><p class="muerte"><%= artista["muerte"] %></p>
+			<p class="lestilo">Estilo</p><p class="estilo"><%= artista["estilo"] %></p>
+		</div>
+	</div>
+	<hr>
+	<br>
+	<p>Las obras Klimt se caracterizaron, en su primera etapa artística, por cultivar un estilo ecléctico, con interés en temas históricos. Con posterioridad, Klimt fue uno de lo protagonistas del movimiento artístico que lo haría pasar a la historia: El Modernismo (Art Nouveau), desarrollado en Europa principalmente a principios del s. XX.</p>
+	<br>
+	<p>A partir 1909, Klimt comienza a experimentar y a hacerse un experto en el trabajo con mosaico, estos son sus obras más conocidas hoy en día, por ejemplo: El Beso o Judit.</p>
+	<br>
+	<p>Los temas principales que inspiraron sus cuadros son: sexualidad, amor y muerte. El valor de las obras queda patente al ver los precios que han alcanzado en el mercado, por ejemplo, el retrato de Adele Bloch-Bauer pintado en 1907, fue adquirido por 135 millones de dólares por el Museo neoyorquino Neue Galerie en 2006.</p>
+</body>
